@@ -5,10 +5,33 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>开源 LICENSE 选型</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="pure-g pure-u-1-1">
 <div class="pure-u-1"><h1 style="text-align:center">开源 LICENSE 选型</h1> </div>
+<script id="template" type="x-tmpl-mustache">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {{ text }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">{{ okText }}</button>
+        <button type="button" class="btn btn-danger">{{ cancelText }}</button>
+      </div>
+    </div>
+  </div>
+</script>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+</div>
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1601px" height="1319px" viewBox="0 0 1601 1319" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
@@ -285,7 +308,21 @@
 </svg>
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/knockout-3.4.2.js"></script>
+<script src="./js/popper.min.js"></script>
 <script src="./js/mustache.min.js"></script>
-<script src="./js/bootbox.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script>
+$(function() {
+    var template = $('#template').html();
+    Mustache.parse(template);   // optional, speeds up future uses
+    var rendered = Mustache.render(template, {text: "你关心代码的死活吗？", okText: "关心", cancelText: "不关心"});
+
+    console.log(rendered);
+    $('#myModal').html(rendered);
+
+    $('#myModal').modal('show')
+
+})
+</script>
 </body>
 </html>
