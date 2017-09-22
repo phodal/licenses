@@ -264,6 +264,11 @@
             <text id="不。我还可以间接赚钱" font-family="PingFangSC-Regular, PingFang SC" font-size="20" font-weight="normal" fill="#000000">
                 <tspan x="831" y="466">不。我还可以间接赚钱</tspan>
             </text>
+            <text id="@Phodal-https://gith" font-family="PingFangSC-Regular, PingFang SC" font-size="20" font-weight="normal" fill="#000000">
+                <tspan x="0" y="1227">@Phodal</tspan>
+                <tspan x="0" y="1255">https://github.com/phodal/licenses</tspan>
+                <tspan x="0" y="1283">CC-BY-ND</tspan>
+            </text>
         </g>
     </g>
 </svg>
