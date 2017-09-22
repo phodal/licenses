@@ -14,13 +14,13 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">{{ text }}</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        {{ text }}
+          开源只是一种爱好，我并不在乎别人怎么使用这个软件。
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">{{ okText }}</button>
@@ -317,10 +317,11 @@ $(function() {
     Mustache.parse(template);   // optional, speeds up future uses
     var rendered = Mustache.render(template, {text: "你关心代码的死活吗？", okText: "关心", cancelText: "不关心"});
 
-    console.log(rendered);
     $('#myModal').html(rendered);
 
     $('#myModal').modal('show')
+
+    $('ellipse').css({ fill: "#7ED321" })
 
 })
 </script>
