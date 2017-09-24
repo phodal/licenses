@@ -211,11 +211,13 @@
             <text id="只引用库不修改" font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#040404">
                 <tspan x="269" y="692">只引用库不修改</tspan>
             </text>
-            <text id="不需要开源硬件" font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#040404">
-                <tspan x="269" y="824">不需要开源硬件</tspan>
-            </text>
-            <text id="需要开源硬件" font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#040404">
-                <tspan x="269" y="920">需要开源硬件</tspan>
+            <g id="Group-2" transform="translate(269.000000, 805.000000)" font-size="18" font-family="PingFangSC-Regular, PingFang SC" fill="#040404" font-weight="normal">
+                <text id="需要开源硬件、DRM、专利等">
+                    <tspan x="0" y="19">需要开源硬件、DRM、专利等</tspan>
+                </text>
+            </g>
+            <text id="需要开源硬件、DRM、专利等" font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#040404">
+                <tspan x="270" y="920">需要开源硬件、DRM、专利等</tspan>
             </text>
             <text id="需要开源服务器源码" font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#040404">
                 <tspan x="269" y="1019">需要开源服务器源码</tspan>
