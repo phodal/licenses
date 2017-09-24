@@ -285,8 +285,8 @@
             <text id="BSD" font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#040404">
                 <tspan x="1166" y="1295">BSD</tspan>
             </text>
-            <text id="修改的文件-是否要版权声明" font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#000000">
-                <tspan x="1133" y="943">修改的文件</tspan>
+            <text id="每个修改的文件-是否要版权声明" font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="1133" y="943">每个修改的文件</tspan>
                 <tspan x="1133" y="968">是否要版权声明</tspan>
             </text>
             <text id="Apache" font-family="PingFangSC-Regular, PingFang SC" font-size="18" font-weight="normal" fill="#000000">
